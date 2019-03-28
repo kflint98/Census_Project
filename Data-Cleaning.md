@@ -7,7 +7,8 @@ census[census == "?"] <-NA
 ```
 
 ```
-//convert the income brackets to numeric values
+//convert the income brackets and sex to numeric values
 cenus$income<-as.numeric(census$income)
+census$sex <-as.numeric(census$sex)
 
 ```
