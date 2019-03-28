@@ -5,3 +5,9 @@
 census[census == "?"] <-NA
 
 ```
+
+```
+//convert the income brackets to numeric values
+cenus$income<-as.numeric(census$income)
+
+```
