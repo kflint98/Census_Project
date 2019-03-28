@@ -4,4 +4,5 @@ This page details what our team did for our final project for CSC 3220 Fundament
 
 <a href="https://github.com/austinatchley1/Data-Science-Team-Project/tree/master/Visualization.html">Visualizations </a>
 
-<a href="https://github.com/austinatchley1/Data-Science-Team-Project/blob/master/Data%20Cleaning.html">Data Cleaning </a>
+<a href="https://austinatchley1.github.io/Data-Science-Team-Project/DataCleaning.html">Data Cleaning.html">Data Cleaning </a>
+
