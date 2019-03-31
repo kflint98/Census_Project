@@ -1,4 +1,4 @@
-# <center>Austin Atchley | Drew Hall<br>Houston Shearin | Kris Flint</center>
+# <center>Austin Atchley | Houston Shearin<br>Drew Hall | Kris Flint</center>
 
 This page details what our team did for our final project in CSC 3220 Fundamentals of Data Science at Tennessee Tech University.
 
