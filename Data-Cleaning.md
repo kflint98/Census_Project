@@ -16,6 +16,7 @@ census$sex <-as.numeric(census$sex)
 ```
 the income changed to 1 for less than or equal to 50K and 2 for greater than 50k<br>
 the sex changed to 1 for female and 2 for male
+
 Country               | Number 
 --------------------- | ------
 Cambodia | 2
