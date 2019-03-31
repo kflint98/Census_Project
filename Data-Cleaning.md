@@ -36,7 +36,7 @@ Dominican-Republic| 7
 Ecuador | 8
 El-Salvador | 9 
 England | 10
-Francen11 | 11
+France | 11
 Germany | 12
 Greece | 13
 Guatemala | 14
