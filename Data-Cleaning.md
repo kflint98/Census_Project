@@ -17,7 +17,7 @@ census$sex <-as.numeric(census$sex)
 Income Bracket | Number
 -------------- | -----
 <= 50k | 1
->=50k | 2
+>50k | 2
 
 Sex | Number
 --- | -----
