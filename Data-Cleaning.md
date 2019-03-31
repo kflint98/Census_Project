@@ -7,17 +7,18 @@ census[census == "?"] <-NA
 
 ```
 
-convert the income brackets and sex to numeric values
+convert the income brackets, sex, and native.country to numeric values
 
 ```
 cenus$income<-as.numeric(census$income)
 census$sex <-as.numeric(census$sex)
+census$sex <-as.numeric(census$native.country)
 
 ```
 Income Bracket | Number
 -------------- | -----
 0-50,000 | 1
-50,0001+ | 2
+50,001+ | 2
 
 Sex | Number
 --- | -----
