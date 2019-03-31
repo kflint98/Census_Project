@@ -14,8 +14,15 @@ cenus$income<-as.numeric(census$income)
 census$sex <-as.numeric(census$sex)
 
 ```
-the income changed to 1 for less than or equal to 50K and 2 for greater than 50k<br>
-the sex changed to 1 for female and 2 for male
+Income Bracket | Number
+-------------- | -----
+<= 50k | 1
+>=50k | 2
+
+Sex | Number
+--- | -----
+F | 1
+M | 2
 
 Country               | Number 
 --------------------- | ------
