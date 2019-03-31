@@ -15,10 +15,12 @@ census$sex <-as.numeric(census$sex)
 census$sex <-as.numeric(census$native.country)
 
 ```
+
 Income Bracket | Number
 -------------- | -----
 0-50,000 | 1
 50,001+ | 2
+
 
 Sex | Number
 --- | -----
