@@ -1,6 +1,4 @@
-* [Data Cleaning](https://austinatchley1.github.io/Data-Science-Team-Project/Data-Cleaning.html)
-* Visualizations
-  * [knn](https://github.com/austinatchley1/Data-Science-Team-Project/blob/master/Visualization/K-NN.md)
+
 <h1><center>Austin Atchley | Houston Shearin<br>Drew Hall | Kris Flint</center></h1>
 
   This page details what our team did for our final project in CSC 3220 Fundamentals of Data Science at Tennessee Tech University. The dataset we used can be obtained from the following link: [adult-census-income](https://www.kaggle.com/uciml/adult-census-income)
