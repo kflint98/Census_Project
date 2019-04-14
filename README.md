@@ -1,5 +1,4 @@
 <h1>&emsp;&emsp;&emsp;Austin Atchley | Houston Shearin<br>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;Drew Hall | Kris Flint</h1>
-<h1><center>|</center></h1>
 
   This page details what our team did for our final project in CSC 3220 Fundamentals of Data Science at Tennessee Tech University. The dataset we used can be obtained from the following link: [adult-census-income](https://www.kaggle.com/uciml/adult-census-income)
 
