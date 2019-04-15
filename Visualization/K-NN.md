@@ -1,5 +1,6 @@
 
-```function(data, num)
+```
+function(data, num)
 {   #Partition the data
     result<-matrix(nrow=num, ncol=2)
     for(i in 1:num){
