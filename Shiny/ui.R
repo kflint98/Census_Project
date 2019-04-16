@@ -19,11 +19,14 @@ ui <- fluidPage(
 
 
       # Input: Slider for the number of bins ----
-      sliderInput(inputId = "range",
+      conditionalPanel(
+        condition = "input.var == K-NN",
+        sliderInput(inputId = "range",
                   label = "Range of number of neighbors:",
                   min = 1,
                   max = 20,
-                  value = c(1,20)),
+                  value = c(1,20))
+      )
     	
     	actionButton("refresh", "Rerun classifier")
 
