@@ -4,7 +4,7 @@ library(shiny)
 ui <- fluidPage(
 
   # App title ----
-  titlePanel("Congressional Voting Records kNN Misclassication Rate by k"),
+  titlePanel("Census income kNN Misclassication Rate by k"),
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
