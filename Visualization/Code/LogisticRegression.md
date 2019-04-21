@@ -1,12 +1,12 @@
 After splitting the data into a test set, with even number of >50k and <50k to account for class bias,
 we ran logitMod to produce a logistic regression.
-``
+```
 logitMod <- glm(income ~ age+workclass+fnlwgt+education.num+marital.status+occupation+
 relationship+race+sex+capital.gain+capital.loss+hours.per.week+native.country, 
 data=trainingData, family=binomial(link='logit'), na.action = na.exclude)
-``
+```
 Note: must treat income as factor
-``
+```
 > summary(logitMod)
 
 Call:
@@ -46,4 +46,4 @@ Residual deviance:  9894.6  on 10304  degrees of freedom
 AIC: 9922.6
 
 Number of Fisher Scoring iterations: 7
-``
+```
