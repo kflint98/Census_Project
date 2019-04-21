@@ -1,5 +1,7 @@
 ## Details some of the Data cleaning we went through on our dataset
 
+Here is a link to download our cleaned version of the data set: [Cleaned Data Set](https://austinatchley1.github.io/Data-Science-Team-Project/adult_cleaned.csv)
+
 convert all ?'s to NA
 
 ```
