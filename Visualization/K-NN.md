@@ -48,3 +48,5 @@ function(data, num)
  [9,]   23 0.6868888
 [10,]   23 0.6951765
 ```
+
+![K-NN Accuracy Graph](https://austinatchley1.github.io/Data-Science-Team-Project/Visualization/AccuracyOfKNN.png)
