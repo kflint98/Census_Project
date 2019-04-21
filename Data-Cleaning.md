@@ -14,7 +14,7 @@ convert the income brackets, sex, and native.country to numeric values
 ```
 cenus$income<-as.numeric(census$income)
 census$sex <-as.numeric(census$sex)
-census$sex <-as.numeric(census$native.country)
+census$native.country <-as.numeric(census$native.country)
 
 ```
 <br>
