@@ -49,6 +49,9 @@ function(data, num)
 [10,]   23 0.6951765
 ```
 
+
+![K-NN Accuracy Graph](https://austinatchley1.github.io/Data-Science-Team-Project/Visualization/AccuracyOfKNN.png)
+
 We then ran kNN with the data partitioned to account for class bias. We did this by preserving the ratio of income brackets across train, test, and validation.
 
 ```
@@ -114,4 +117,3 @@ This is the kNN with the data partitioned to account for class bias.
 [10,]   23 0.8031054
 ```
 
-![K-NN Accuracy Graph](https://austinatchley1.github.io/Data-Science-Team-Project/Visualization/AccuracyOfKNN.png)
