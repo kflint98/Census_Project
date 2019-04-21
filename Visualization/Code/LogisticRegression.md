@@ -4,9 +4,9 @@ we ran logitMod to produce a logistic regression.
 logitMod <- glm(income ~ age+workclass+fnlwgt+education.num+marital.status+occupation+
 relationship+race+sex+capital.gain+capital.loss+hours.per.week+native.country, 
 data=trainingData, family=binomial(link='logit'), na.action = na.exclude)
-
+``
 Note: must treat income as factor
-
+``
 > summary(logitMod)
 
 Call:
