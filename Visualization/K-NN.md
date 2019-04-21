@@ -47,8 +47,11 @@ function(data, num)
  [8,]   17 0.6963368
  [9,]   23 0.6868888
 [10,]   23 0.6951765
+```
 
 We then ran kNN with the data partitioned to account for class bias. We did this by preserving the ratio of income brackets across train, test, and validation.
+
+```
 
 function(data, num)
 {   #Partition the data
