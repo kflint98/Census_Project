@@ -27,6 +27,7 @@ F | 1
 M | 2
 <br>
 <br>
+
 And the same had to be done with native country.
 Country               | Number 
 --------------------- | ------
