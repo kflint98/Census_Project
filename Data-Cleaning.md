@@ -2,7 +2,7 @@
 
 Here is a link to download our cleaned version of the data set: [Cleaned Data Set](https://austinatchley1.github.io/Data-Science-Team-Project/adult_cleaned.csv)
 
-First, we converted all the "?" value to "NA
+First, we converted all the "?" value to "NA"
 
 
 Old | New
@@ -13,6 +13,7 @@ Old | New
 
 
 Then, we converted the income bracket categories to simple numerical categories.
+
 Income Bracket | Number
 -------------- | -----
 0->50,000 | 1
@@ -32,6 +33,7 @@ M | 2
 
 
 And the same had to be done with native country.
+
 Country               | Number 
 --------------------- | ------
 Cambodia | 2
