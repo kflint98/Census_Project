@@ -10,14 +10,16 @@ Old | New
 ? | NA
 
 <br> 
-<br>
+
+
 Then, we converted the income bracket categories to simple numerical categories.
 Income Bracket | Number
 -------------- | -----
 0->50,000 | 1
 50,001+ | 2
+
 <br>
-<br>
+
 
 We had to convert sex from letter to numerical values.
 
@@ -25,8 +27,9 @@ Sex | Number
 --- | -----
 F | 1
 M | 2
+
 <br>
-<br>
+
 
 And the same had to be done with native country.
 Country               | Number 
