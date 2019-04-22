@@ -4,10 +4,12 @@ Here is a link to download our cleaned version of the data set: [Cleaned Data Se
 
 convert all ?'s to NA
 
-```
-census[census == "?"] <-NA
 
-```
+Old | New
+----|-----
+? | NA
+
+
 
 convert the income brackets, sex, and native.country to numeric values
 
