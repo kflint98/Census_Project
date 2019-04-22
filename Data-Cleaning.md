@@ -2,24 +2,14 @@
 
 Here is a link to download our cleaned version of the data set: [Cleaned Data Set](https://austinatchley1.github.io/Data-Science-Team-Project/adult_cleaned.csv)
 
-convert all ?'s to NA
+First, we converted all the "?" value to "NA
 
 
 Old | New
 ----|-----
 ? | NA
 
-
-
-convert the income brackets, sex, and native.country to numeric values
-
-```
-cenus$income<-as.numeric(census$income)
-census$sex <-as.numeric(census$sex)
-census$native.country <-as.numeric(census$native.country)
-
-```
-<br>
+<br> 
 
 Income Bracket | Number
 -------------- | -----
