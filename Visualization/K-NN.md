@@ -32,7 +32,7 @@ function(data, num)
 
 > result<-knnResult(na.exclude(adult), 10)
 > result
-      [k]     [Acc]
+         k       Acc
  [1,]   23 0.6855627
  [2,]   21 0.6961711
  [3,]   21 0.6950108
