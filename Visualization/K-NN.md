@@ -18,10 +18,6 @@ function(data, num)
         #extract the k value
         temp<-knnFit$bestTune
         result[i,1]<-temp$k
-        #run the knn
-        #train<-train[-c(15)]
-        knn<-knn(train, validation, cl=train$income)
-        #table(knn, validation$party)
         #combine the train and validation
         train<-rbind(train, validation)
         #obtain future metric
@@ -87,10 +83,6 @@ function(data, num)
         #extract the k value
         temp<-knnFit$bestTune
         result[i,1]<-temp$k
-        #run the knn
-        #train<-train[-c(15)]
-        knn<-knn(train, validation, cl=train$income)
-        #table(knn, validation$party)
         #combine the train and validation
         train<-rbind(train, validation)
         #obtain future metric
