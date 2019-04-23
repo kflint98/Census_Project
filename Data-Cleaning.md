@@ -96,7 +96,7 @@ Income Bracket | Number
 <br>
 
 
-We had to convert sex from letter to numerical values.
+Sex conversion.
 
 Sex | Number
 --- | -----
@@ -106,7 +106,7 @@ M | 2
 <br>
 
 
-And the same had to be done with native country.
+Native country conversion.
 
 Country               | Number 
 --------------------- | ------
