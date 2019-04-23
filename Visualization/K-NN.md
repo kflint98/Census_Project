@@ -47,6 +47,9 @@ function(data, num)
  [8,]   17 0.6963368
  [9,]   23 0.6868888
 [10,]   23 0.6951765
+
+> mean(result[,2])
+[1] 0.6946627
 ```
 
 
@@ -101,8 +104,9 @@ function(data, num)
 }
 
 This is the kNN with the data partitioned to account for class bias.
-> incomeKnn(na.exclude(income), 10)
-      [k]     [Acc]
+> resultClass <- incomeKnn(na.exclude(income), 10)
+> resultClass
+         k       Acc
  [1,]   21 0.8033904
  [2,]   19 0.7997345
  [3,]   19 0.7978688
@@ -113,5 +117,8 @@ This is the kNN with the data partitioned to account for class bias.
  [8,]   15 0.8036658
  [9,]   21 0.8003966
 [10,]   23 0.8031054
+
+> mean(resultClass[,2])
+[1] 0.8020983
 ```
 
