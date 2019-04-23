@@ -36,7 +36,7 @@ function(data, num)
 
 > result<-knnResult(na.exclude(adult), 10)
 > result
-      [,1]      [,2]
+      [k]     [Acc]
  [1,]   23 0.6855627
  [2,]   21 0.6961711
  [3,]   21 0.6950108
@@ -104,7 +104,7 @@ function(data, num)
 
 This is the kNN with the data partitioned to account for class bias.
 > incomeKnn(na.exclude(income), 10)
-      [,1]      [,2]
+      [k]     [Acc]
  [1,]   21 0.8033904
  [2,]   19 0.7997345
  [3,]   19 0.7978688
