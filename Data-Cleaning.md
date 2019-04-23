@@ -9,6 +9,11 @@ Old | New
 ? | NA
 
 <br> 
+We had to convert quite a few values into numeric values so they could be used with KNN and Logistical Regression. Each conversino followed this format:
+
+```
+cenus$income<-as.numeric(census$income)
+```
 
 Workclass conversion.
 
