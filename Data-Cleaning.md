@@ -2,17 +2,89 @@
 
 Here is a link to download our cleaned version of the data set: [Cleaned Data Set](https://austinatchley1.github.io/Data-Science-Team-Project/adult_cleaned.csv)
 
-First, we converted all the "?" value to "NA"
-
+"?" Conversion to "NA".
 
 Old | New
 ----|-----
 ? | NA
 
 <br> 
+Workclass conversion.
+
+Workclass | NumericalWorkclass
+----------|-------------------
+Federal-Gov | 2
+Local-Gov | 3
+NeverWorked | 4
+Private | 5
+Self-Imp-Inc | 6
+Self-ImpNot-Inc| 7
+State-Gov | 8
+Without-Pay | 9
+
+<br>
+
+Marital Status conversion.
+ 
+MaritalStatis | NumericalMaritalStatus
+-------------|-------------------
+Divorced | 1
+Married-AF-spouse | 2
+Married-civ-spouse | 3
+Married-Spouse-Absent | 4
+Never-Married | 5
+Separated | 6
+Widowed | 7
 
 
-Then, we converted the income bracket categories to simple numerical categories.
+<br>
+Occupation Conversion.
+
+Occupation | NumericalOccupation
+-------------|-------------------
+Adm-clerical | 2
+Armed-Forces | 3
+Craft-Repair | 4
+Exec-Managerial| 5
+Farming-Fishing | 6
+Handlers-cleaners | 7
+Machine-op-inspct | 8
+Other-Service | 9
+Priv-House-Serv | 10
+Prof-Specialty | 11
+Protective-Serv |12
+Sales | 13
+Tech-Support | 14
+Transport-Moving | 15
+
+<br>
+
+Relationship Conversion.
+
+Relationship | NumericalRelationship
+-------------|-------------------
+Husband | 1
+Not-In-Family | 2
+Other-Relative | 3
+Own-Child | 4
+Unmarried | 5
+Wife | 6
+
+<br>
+
+Race Conversion.
+
+Relationship | NumericalRelationship
+-------------|-------------------
+ Amer-Indian-Eskimo | 1
+Asian-Pac-Islander | 2
+Black | 3
+Other | 4
+White | 5
+
+<br>
+
+Income bracker conversion.
 
 Income Bracket | Number
 -------------- | -----
