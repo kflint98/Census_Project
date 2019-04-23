@@ -9,6 +9,7 @@ Old | New
 ? | NA
 
 <br> 
+
 Workclass conversion.
 
 Workclass | NumericalWorkclass
@@ -38,6 +39,7 @@ Widowed | 7
 
 
 <br>
+
 Occupation Conversion.
 
 Occupation | NumericalOccupation
