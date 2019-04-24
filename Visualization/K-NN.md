@@ -60,8 +60,10 @@ function(data, num)
     for(i in 1:num){
         input_ones <- data[which(data$income == 1),]
         input_twos <- data[which(data$income == 2),]
-        input_ones_training_rows <- sample(1:nrow(input_ones), 0.6*nrow(input_ones))
-        input_twos_training_rows <- sample(1:nrow(input_twos), 0.6*nrow(input_twos))
+        input_ones_training_rows <- sample(1:nrow(input_ones), 
+        0.6*nrow(input_ones))
+        input_twos_training_rows <- sample(1:nrow(input_twos), 
+        0.6*nrow(input_twos))
         training_ones <- input_ones[input_ones_training_rows, ]
         training_twos <- input_twos[input_twos_training_rows, ]
         train <- rbind(training_ones, training_twos)
