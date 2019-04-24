@@ -54,9 +54,9 @@ Here are the results of that function.
 ```
 Here is a sample confusion matrix obtained using this method.
 ```
-knn    1    2
-  1 4450 1131
-  2   98  354
+knn             Pred: <50k Pred: >=50k
+  Actual: <50k        4450        1131
+  Actual: >=50k         98         354
 ```
 
 We then ran kNN with the data partitioned to account for class bias. We did this by preserving the ratio of income brackets across train, test, and validation.
@@ -131,8 +131,8 @@ This is the kNN with the data partitioned to account for class bias.
 ```
 Here is a sample confusion matrix obtained using this method.
 ```
-knn    1    2
-  1 4449 1137
-  2   82  372
+knn             Pred: <50k Pred: >=50k
+  Actual: <50k        4449        1137
+  Actual: >=50k         82         372
 ```
 As you can see, the accuracy of the model increased slightly when the data was partitioned to keep the ratio of income brackets intact across the training, validation, and test sets.
