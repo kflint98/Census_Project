@@ -3,6 +3,7 @@ First we need to load a library used later
 library(InformationValue)
 ```
 Then we need to split the data set into training and test sets
+
 Keep in mind we need to account for bias
 ```
 input_ones <- adult_cleaned[which(adult_cleaned$income == 1),]
