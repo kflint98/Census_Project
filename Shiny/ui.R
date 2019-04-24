@@ -4,7 +4,7 @@ library(shiny)
 ui <- fluidPage(
 
   # App title ----
-  titlePanel("Census income kNN Misclassication Rate by k"),
+  titlePanel("Census income kNN Accuracy Rate by k"),
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -14,21 +14,14 @@ ui <- fluidPage(
     
     	selectInput("var", 
         	label = "Choose a classifier to display",
-        	choices = c("K-NN", "K-Means","Logistic Regression", "PCA"),
+        	choices = c("K-NN","Logistic Regression"),
         	selected = "K-NN"),
 
-
-      # Input: Slider for the number of bins ----
-      conditionalPanel(
-        condition = "input.var == K-NN",
         sliderInput(inputId = "range",
                   label = "Range of number of neighbors:",
                   min = 1,
                   max = 20,
                   value = c(1,20))
-      )
-    	
-    	actionButton("refresh", "Rerun classifier")
 
     ),
 
