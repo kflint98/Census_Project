@@ -125,4 +125,10 @@ This is the kNN with the data partitioned to account for class bias.
 > mean(resultClass[,2])
 [1] 0.8020983
 ```
+Here is a sample confusion matrix obtained using this method.
+```
+knn    1    2
+  1 4449 1137
+  2   82  372
+```
 As you can see, the accuracy of the model increased significantly when the data was partitioned to keep the ratio of income brackets intact across the training, validation, and test sets. We observed an increase of about 10% total accuracy of our knn model due to this change.
