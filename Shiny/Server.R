@@ -13,15 +13,15 @@ n = nrow(adult)
 trainIndex = sample(1:n, size = round(0.8*n), replace=FALSE)
 train = adult[trainIndex ,]
 notTrain = adult[-trainIndex ,]
-n = nrow(notTrain) ###
-validationIndex = sample(1:n, size = round(0.5*n), replace=FALSE) ###
-validation = notTrain[validationIndex ,] ###
-test = notTrain[-validationIndex ,] ###
+n = nrow(notTrain)
+validationIndex = sample(1:n, size = round(0.5*n), replace=FALSE)
+validation = notTrain[validationIndex ,]
+test = notTrain[-validationIndex ,]
 
 cl_train<-train$income
 train<-train[-c(15)]
-cl_test<-test$income ###
-test<-test[-c(15)] ###
+cl_test<-test$income
+test<-test[-c(15)]
 cl_valid<-validation$income
 validation<-validation[-c(15)]
 
