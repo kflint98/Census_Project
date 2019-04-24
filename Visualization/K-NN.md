@@ -48,7 +48,12 @@ function(data, num)
 > mean(result[,2])
 [1] 0.6946627
 ```
-
+Here is a sample confusion matrix obtained using this method.
+```
+knn    1    2
+  1 4450 1131
+  2   98  354
+```
 
 We then ran kNN with the data partitioned to account for class bias. We did this by preserving the ratio of income brackets across train, test, and validation.
 
