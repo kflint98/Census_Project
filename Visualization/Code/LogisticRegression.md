@@ -25,24 +25,26 @@ test$income <- test$income / 2
 ```
 Now we can rum the general linear model to assign weights to the features.
 ```
-logitMod <- glm(income ~ age + workclass + fnlwgt + education.num + marital.status + occupation + relationship + race + sex + capital.gain + capital.loss + hours.per.week + native.country, data = train, family = binomial(link='logit'))
+logitMod <- glm(income ~ age + workclass + fnlwgt + education.num + marital.status + occupation + 
+  relationship + race + sex + capital.gain + capital.loss + hours.per.week + native.country, 
+  data = train, family = binomial(link='logit'))
 ```
-Feature | Weight
-------- | ------
-(Intercept) | -1.430069e+00
-age | 9.934648e-03
-workclass | -2.307790e-02
-fnlwgt | 1.663859e-07
-education.num | 9.775032e-02
-marital.status | -4.720031e-02
-occupation | 3.855465e-03
-relationship | -3.168257e-02
-race | 3.381686e-02
-sex | 2.286772e-01
-capital.gain | 1.875236e-04
-capital.loss | 3.470100e-04
-hours.per.week | 7.127751e-03
-native.country | -1.183745e-03
+Feature | Weight(SciNot) | Weight(RegNot)
+------- | -------------- | --------------
+(Intercept) | -1.430069e+00 | -1.430069
+age | 9.934648e-03 | 0.009934648
+workclass | -2.307790e-02 | -0.02307790
+fnlwgt | 1.663859e-07 | 0.0000001663859
+education.num | 9.775032e-02 | 0.097750323
+marital.status | -4.720031e-02 | -0.04720031
+occupation | 3.855465e-03 | 0.003855465
+relationship | -3.168257e-02 | -0.03168257
+race | 3.381686e-02 | 0.03381686
+sex | 2.286772e-01 | 0.2286772
+capital.gain | 1.875236e-04 | 0.0001875236
+capital.loss | 3.470100e-04 | 0.0003470100
+hours.per.week | 7.127751e-03 | 0.007127751
+native.country | -1.183745e-03 | -0.001183745
 
 
 ```
