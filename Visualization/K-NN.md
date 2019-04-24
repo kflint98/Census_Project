@@ -110,24 +110,23 @@ function(data, num)
 ```
 This is the kNN with the data partitioned to account for class bias.
 ```
-> resultClass <- incomeKnn(na.exclude(income), 10)
+> resultClass <- knnFixClass(adultna, 10)
 > resultClass
          k       Acc
- [1,]   21 0.8033904
- [2,]   19 0.7997345
- [3,]   19 0.7978688
- [4,]   23 0.8042398
- [5,]   21 0.8052292
- [6,]   23 0.8054822
- [7,]   21 0.7978706
- [8,]   15 0.8036658
- [9,]   21 0.8003966
-[10,]   23 0.8031054
-
+ [1,]   19 0.7892727
+ [2,]   21 0.7958541
+ [3,]   21 0.7928003
+ [4,]   19 0.7895871
+ [5,]   21 0.7942687
+ [6,]   21 0.7906899
+ [7,]   19 0.7923743
+ [8,]   19 0.7967033
+ [9,]   21 0.7930749
+[10,]   17 0.7805120
 > mean(resultClass[,2])
-[1] 0.8020983
+[1] 0.7915137
 > sd(resultClass[,2])
-[1] 0.00289109
+[1] 0.00457826
 ```
 Here is a sample confusion matrix obtained using this method.
 ```
@@ -135,4 +134,4 @@ knn             Pred: <50k Pred: >=50k
   Actual: <50k        4449        1137
   Actual: >=50k         82         372
 ```
-As you can see, the accuracy of the model increased slightly when the data was partitioned to keep the ratio of income brackets intact across the training, validation, and test sets.
+As you can see, the accuracy of the model was unaffected by the data partitioning method, but the standard deviation of the accuracies across multiple iterations was lower with the class bias partitioning method. This suggests that the model will be more consistently close to the average accuracy.
