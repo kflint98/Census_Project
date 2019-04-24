@@ -30,7 +30,9 @@ function(data, num)
     }
     return(result)
 }
-
+```
+Here are the results of that function.
+```
 > result<-knnResult(na.exclude(adult), 10)
 > result
          k       Acc
@@ -103,8 +105,9 @@ function(data, num)
     }
     return(result)
 }
-
+```
 This is the kNN with the data partitioned to account for class bias.
+```
 > resultClass <- incomeKnn(na.exclude(income), 10)
 > resultClass
          k       Acc
