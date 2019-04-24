@@ -21,7 +21,7 @@ test_twos <- input_twos[-input_ones_training_rows, ]
 
 test <- rbind(test_ones, test_twos)
 ```
-In order to run the glm function we need to adjust the income column so that it is between 0 and 1.
+In order to run the glm function we need to adjust the income column so that it is between 0 and 1
 ```
 train$income <- train$income / 2
 test$income <- test$income / 2
@@ -35,6 +35,7 @@ logitMod <- glm(income ~ age + workclass + fnlwgt + education.num +
 ```
 
 The table below shows the weights of the coefficients as calulated by the glm
+
 I have bolded what appear to be the three most significant features
 
 Feature | Weight(SciNot) | Weight(RegNot)
