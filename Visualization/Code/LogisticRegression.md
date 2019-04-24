@@ -73,3 +73,11 @@ misClassError(test$income, pred_vals, threshold = optimal)
 The first missclassification rate represents what happens when we stop at the default threshold of 0.5
 
 Based on this misclassification rate we can see that the approximate accuracy of our model is 74.83%
+
+Now we can calculate the ROC curve which allows us to compare the true positive and the false positive rate.
+
+```
+plotROC(test$income, pred_vals)
+```
+
+![ROC Curve](https://austinatchley1.github.io/Data-Science-Team-Project/Visualization/ROC curve.png)
