@@ -1,4 +1,4 @@
-
+To run the knn, we created a function that partitions the data and optimizes the k value automatically. It then repeats this process a number of times the user specified, and returns the result in the form of a matrix.
 ```
 function(data, num)
 {   #Partition the data
@@ -21,7 +21,7 @@ function(data, num)
         #combine the train and validation
         train<-rbind(train, validation)
         #obtain future metric
-        knn<-knn(train, test, cl=train$income)
+        knn<-knn(train, test, cl=train$income, k=temp$k)
         temp<-table(knn, test$income)
         #calculate accuracy
         acc<-(temp[1,1]+temp[2,2])/sum(temp)
@@ -86,7 +86,7 @@ function(data, num)
         #combine the train and validation
         train<-rbind(train, validation)
         #obtain future metric
-        knn<-knn(train, test, cl=train$income)
+        knn<-knn(train, test, cl=train$income, k=temp$k)
         temp<-table(knn, test$income)
         #calculate accuracy
         acc<-(temp[1,1]+temp[2,2])/sum(temp)
