@@ -7,8 +7,10 @@ Keep in mind we need to account for bias
 ```
 input_ones <- adult_cleaned[which(adult_cleaned$income == 1),]
 input_twos <- adult_cleaned[which(adult_cleaned$income == 2),]
-input_ones_training_rows <- sample(1:nrow(input_ones), 0.7*nrow(input_ones))
-input_twos_training_rows <- sample(1:nrow(input_twos), 0.7*nrow(input_twos))
+input_ones_training_rows <- sample(1:nrow(input_ones), 
+  0.7*nrow(input_ones))
+input_twos_training_rows <- sample(1:nrow(input_twos), 
+  0.7*nrow(input_twos))
 training_ones <- input_ones[input_ones_training_rows, ]
 training_twos <- input_twos[input_twos_training_rows, ]
 train <- rbind(training_ones, training_twos)
@@ -25,8 +27,9 @@ test$income <- test$income / 2
 ```
 Now we can run the general linear model to assign weights to the features
 ```
-logitMod <- glm(income ~ age + workclass + fnlwgt + education.num + marital.status + occupation + 
-  relationship + race + sex + capital.gain + capital.loss + hours.per.week + native.country, 
+logitMod <- glm(income ~ age + workclass + fnlwgt + education.num + 
+  marital.status + occupation + relationship + race + sex + 
+  capital.gain + capital.loss + hours.per.week + native.country, 
   data = train, family = binomial(link='logit'))
 ```
 
