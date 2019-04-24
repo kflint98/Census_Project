@@ -27,6 +27,8 @@ Now we can rum the general linear model to assign weights to the features.
 ```
 logitMod <- glm(income ~ age + workclass + fnlwgt + education.num + marital.status + occupation + relationship + race + sex + capital.gain + capital.loss + hours.per.week + native.country, data = train, family = binomial(link='logit'))
 
+
+----------- | --------------
 (Intercept) | -1.430069e+00
 age | 9.934648e-03
 workclass | -2.307790e-02
