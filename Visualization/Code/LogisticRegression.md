@@ -80,4 +80,4 @@ Now we can calculate the ROC curve which allows us to compare the true positive 
 plotROC(test$income, pred_vals)
 ```
 
-![ROC Curve](https://austinatchley1.github.io/Data-Science-Team-Project/Visualization/ROC curve.png)
+![ROC Curve](https://austinatchley1.github.io/Data-Science-Team-Project/Visualization/ROCcurve.png)
