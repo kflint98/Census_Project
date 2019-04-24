@@ -49,6 +49,8 @@ Here are the results of that function.
 
 > mean(result[,2])
 [1] 0.7913144
+> sd(result[,2])
+[1] 0.007937802
 ```
 Here is a sample confusion matrix obtained using this method.
 ```
@@ -124,6 +126,8 @@ This is the kNN with the data partitioned to account for class bias.
 
 > mean(resultClass[,2])
 [1] 0.8020983
+> sd(resultClass[,2])
+[1] 0.00289109
 ```
 Here is a sample confusion matrix obtained using this method.
 ```
