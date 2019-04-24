@@ -48,7 +48,7 @@ Here are the results of that function.
 [10,]   23 0.7845185
 
 > mean(result[,2])
-[1] 0.6946627
+[1] 0.7913144
 ```
 Here is a sample confusion matrix obtained using this method.
 ```
@@ -131,4 +131,4 @@ knn    1    2
   1 4449 1137
   2   82  372
 ```
-As you can see, the accuracy of the model increased significantly when the data was partitioned to keep the ratio of income brackets intact across the training, validation, and test sets. We observed an increase of about 10% total accuracy of our knn model due to this change.
+As you can see, the accuracy of the model increased slightly when the data was partitioned to keep the ratio of income brackets intact across the training, validation, and test sets.
