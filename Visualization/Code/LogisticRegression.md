@@ -26,7 +26,7 @@ test$income <- test$income / 2
 Now we can rum the general linear model to assign weights to the features.
 ```
 logitMod <- glm(income ~ age + workclass + fnlwgt + education.num + marital.status + occupation + relationship + race + sex + capital.gain + capital.loss + hours.per.week + native.country, data = train, family = binomial(link='logit'))
-
+```
 Feature | Weight
 ------- | ------
 (Intercept) | -1.430069e+00
@@ -43,7 +43,7 @@ capital.gain | 1.875236e-04
 capital.loss | 3.470100e-04
 hours.per.week | 7.127751e-03
 native.country | -1.183745e-03
-```
+
 
 ```
 predicted <- predict(logitMod, test, type="response")
