@@ -14,7 +14,8 @@ function(data, num)
         test=notTrain[-validationIndex,]
         
         trctrl<-trainControl(method='repeatedcv', number=10, repeats=3)
-        knnFit<-train(as.factor(income)~., data=train, method='knn', trControl=trctrl, tuneLength=10)
+        knnFit<-train(as.factor(income)~., data=train, method='knn', 
+        trControl=trctrl, tuneLength=10)
         #extract the k value
         temp<-knnFit$bestTune
         result[i,1]<-temp$k
@@ -79,7 +80,8 @@ function(data, num)
         validation <- rbind(valid_ones, valid_twos)
         
         trctrl<-trainControl(method='repeatedcv', number=10, repeats=3)
-        knnFit<-train(as.factor(income)~., data=train, method='knn', trControl=trctrl, tuneLength=10)
+        knnFit<-train(as.factor(income)~., data=train, method='knn', 
+        trControl=trctrl, tuneLength=10)
         #extract the k value
         temp<-knnFit$bestTune
         result[i,1]<-temp$k
