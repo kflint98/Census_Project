@@ -2,7 +2,7 @@
 
 Here is a link to download our cleaned version of the data set: [Cleaned Data Set](https://austinatchley1.github.io/Data-Science-Team-Project/adult_cleaned.csv)
 
-"?" Conversion to "NA".
+"?" Conversion to "NA". We ended up having 2,400 entries with atleast one "?" value. Later, we had to remove these entries to do proper analysis.
 
 Old | New
 ----|-----
